@@ -14,7 +14,7 @@ public class InsertionSort {
     System.out.println("Before:");
     printArray(numbers);
 
-    insertionSort(numbers); //quick sort
+    insertionSort(numbers); 
 
     System.out.println("\nAfter:");
     printArray(numbers);
@@ -25,15 +25,15 @@ public class InsertionSort {
 
         for(int i = 1; i < inputArray.length; i++) {
 			
-			int currentValue = inputArray[i];
-			int j = i - 1;
+		    int currentValue = inputArray[i];
+		    int j = i - 1;
 
-			while (j >= 0 && inputArray[j] > currentValue) {
-				inputArray[j + 1] = inputArray[j];
-				j--;
-			}
+		    while (j >= 0 && inputArray[j] > currentValue) {
+			    inputArray[j + 1] = inputArray[j];
+			    j--;
+		    }
 
-			inputArray[j + 1] = currentValue;
+		    inputArray[j + 1] = currentValue;
 		}
         
     }
